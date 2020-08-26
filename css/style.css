@@ -1,0 +1,214 @@
+/* ==================
+Autor: Caio Duarte (github.com/caioduarte775);
+=====================*/
+
+/* Formatações gerais */
+
+html, body{
+	height: 100%;
+	overflow-x: hidden;
+	font-family: "Font Gumboots"; 
+}
+
+.caixa{
+	padding: 60px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.alinhar{
+	align-items: center;
+	text-align: center;
+}
+
+/* Formatações navbar principal */
+
+header nav{
+	background-color: #CD3333;
+}
+
+.navbar-brand h2{
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+}
+
+#nav-principal ul li{
+	margin-right: 20px;
+}
+
+#nav-principal ul li a{
+	margin: 10px 0;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	color: #FFF;
+}
+
+#nav-principal ul li a:hover{
+	text-shadow: 1px 1px 2px #FFF;
+}
+
+#nav-principal .btn-custom{
+	width: 120px;
+	border: 2px solid #FFF;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+#nav-principal .btn-custom:hover{
+	transition: .5s;
+	color: #000;
+}
+
+/* Formatações sessão home */
+
+#home .container-fluid{
+	padding: 0;
+}
+
+#home-slider .carousel-inner, #home-slider .carousel-item{
+	height: 90vh;
+	transition: 1s;
+}
+
+#home-slider img{
+	filter: brightness(50%);
+}
+
+#home-slider .carousel-caption{
+	top: 27%;
+}
+
+#home-slider .carousel-caption h2{
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+#home-slider .carousel-caption p{
+	font-size: 22px;
+	font-weight: 300;
+	margin-bottom: 100px;
+	color: #FFF;
+}
+
+#home-slider .btn-home{
+	width: 150px;
+	border: 2px solid #FFF;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+#home-slider .btn-home{
+	transition: .5s;
+}
+
+/* Formatações sessão recursos */
+
+#recursos h2{
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#recursos p{
+	font-size: 20px;
+}
+
+/* Formatações sessão chefes */
+
+#chefes h2{
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* Formatações footer */
+
+#rodape{
+	background-color: #CD3333;
+}
+
+#rodape nav ul li{
+	margin-right: 20px;
+}
+
+#rodape nav ul li a{
+	color: #FFF;
+}
+
+#rodape nav ul li a:hover{
+	text-shadow: 1px 1px 2px #FFF;
+}
+
+#fim p{
+	letter-spacing: -0.03;
+	font-size: 15px;
+}
+
+/* Media Queries */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px){  
+	#nav-principal ul li a{
+		margin: 2px 0;
+	}
+	#home-slider .carousel-caption h2{
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	#home-slider .carousel-caption p{
+		font-size: 17px;
+		margin-bottom: 20px;
+	}
+	#home-slider .carousel-caption{
+		top: 10%;
+	}
+	.carousel-indicators{
+		display: none !important;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px){ 
+	#nav-principal ul li a{
+		margin: 4px 0;
+	}
+    #home-slider .carousel-caption h2{
+		font-size: 32px;
+		margin-bottom: 12px;
+	}
+	#home-slider .carousel-caption p{
+		font-size: 20px;
+		margin-bottom: 22px;
+	}
+	#home-slider .carousel-caption{
+		top: 12%;
+	}
+	.carousel-indicators{
+		display: none !important;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px){  
+	#nav-principal ul li a{
+		margin: 6px 0;
+	}
+	#home-slider .carousel-caption h2{
+		font-size: 34px;
+		margin-bottom: 14px;
+	}
+	#home-slider .carousel-caption p{
+		font-size: 22px;
+		margin-bottom: 24px;
+	}
+	#home-slider .carousel-caption{
+		top: 14%;
+	}
+	.carousel-indicators{
+		display: none !important;
+	}
+}
